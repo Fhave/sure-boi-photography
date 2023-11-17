@@ -39,12 +39,12 @@ const Header = () => {
             onClick={handleToggle}
             className='text-xl text-white hover:text-gray-300'
           >
-            {toggle ? <FaTimes color='white' /> : <FaBars color='white' />}
+            {toggle ? <FaTimes size={30} color='white' /> : <FaBars size={30} color='white' />}
           </button>
         </div>
       </div>
-      <nav className={`md:hidden ${toggle ? 'block' : 'hidden'}`}>
-        <ul className='flex flex-col mt-2 space-y-1'>
+      <nav className={`md:hidden text-right text-shadow ${toggle ? 'block' : 'hidden'}`}>
+        <ul className='flex flex-col -mt-8 space-y-1'>
           <li>
             <a href='#home' className='text-white' onClick={handleToggle}>
               Home

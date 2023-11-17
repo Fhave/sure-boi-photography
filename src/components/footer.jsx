@@ -1,8 +1,6 @@
-// src/components/Footer.js
-import React from 'react';
 import { AiFillGoogleCircle, AiFillFacebook } from 'react-icons/ai';
 
-function Footer() {
+const Footer = () => {
   return (
     <footer className='footer bg-stone-900 text-white flex flex-col md:flex-row py-10 text-center items-center justify-around'>
       <div className='text px-4 mb-4 md:mb-0 md:w-1/3'>
@@ -22,7 +20,7 @@ function Footer() {
         <div className='flex flex-row items-center space-x-4 w-full md:w-1/2'>
           <AiFillFacebook size={20} />
           <a
-            href=''
+            href='https://www.facebook.com/p/Sure-Boi-Photograph-100068109513031/'
             target='_blank'
             rel='noopener noreferrer'
           >

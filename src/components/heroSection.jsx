@@ -8,7 +8,7 @@ const HeroSection = () => {
     >
       <div className='container mx-auto'>
         <div className='flex flex-col sm:flex-row'>
-          <div className='md:w-3/5 md:ml-8 lg:ml-16 pb-8 pt-24 text-center'>
+          <div className='md:w-3/5 mx-auto pb-8 pt-24 text-center text-shadow'>
             <h2 className='text-4xl font-bold mb-4'>
               Capturing the Beauty of Your Every Day Life
             </h2>

@@ -37,7 +37,7 @@ const ContactSection = () => {
   return (
     <section id='contact' className='bg-gray-200 min-h-screen flex items-center justify-center py-16'>
     <div className='container mx-auto text-center'>
-        <div className='flex flex-col sm:flex-row px-8 space-x-8'>
+        <div className='flex flex-col sm:flex-row px-8 space-y-8 sm:space-y-0 space-x-0 sm:space-x-8'>
           <div className='form w-full sm:w-[50%] my-auto'>
             <h2 className='text-3xl font-bold mb-4'>Contact Us</h2>
             <p className='text-gray-700 mb-8'>
@@ -103,7 +103,7 @@ const ContactSection = () => {
               </button>
             </form>
           </div>
-          <div className='img w-full sm:w-[50%] my-auto'>
+          <div className='img w-full sm:w-[50%] my-auto mx-auto'>
             <img src={img6} alt='' className='mx-auto' />
           </div>
         </div>
