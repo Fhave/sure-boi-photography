@@ -1,0 +1,36 @@
+/* #BB951C */
+/* #01443B */
+
+.bg {
+  background: url('./assets//img5.jpg') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.service0 {
+  background: url('./assets//img7.jpg') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+.service1 {
+  background: url('./assets//img1.jpg') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+.services0 {
+  background: url('./assets//img7.jpg') no-repeat center center;
+  background-size: contain;
+  height: 100vh;
+}
+
+.services1 {
+  background: url('./assets//img1.jpg') no-repeat center center;
+  background-size: contain;
+  height: 100vh;
+}
