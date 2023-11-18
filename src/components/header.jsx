@@ -15,7 +15,7 @@ const Header = () => {
     // Initial fade after 2 seconds
     const initialFadeTimeout = setTimeout(() => {
       setShowBackground(false);
-    }, 5000);
+    }, 3000);
 
     // Check scroll position and update showBackground accordingly
     const handleScroll = () => {
@@ -26,7 +26,7 @@ const Header = () => {
         setShowBackground(true);
         setTimeout(() => {
           setShowBackground(false);
-        }, 5000);
+        }, 3000);
       }
     };
 
