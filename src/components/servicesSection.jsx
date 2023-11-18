@@ -1,11 +1,12 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { Events, scrollSpy } from 'react-scroll';
 
 const ServiceItem = ({ title, index, handleHover }) => (
-  <div className='w-full sm:w-1/2 md:w-1/3 p-4 mb-20 relative cursor-pointer'>
-    <div
-      className='h-full flex flex-col justify-center'
-      onMouseEnter={() => handleHover(index)}
-    >
+  <div
+    className='w-full sm:w-1/2 md:w-1/3 p-4 mb-20 relative cursor-pointer'
+    onMouseEnter={() => handleHover(index)}
+  >
+    <div className='h-full flex flex-col justify-center'>
       <h3 className='absolute top-96 sm:top-48 md:top-24 text-[25px] font-semibold mb-2'>
         {title}
       </h3>
@@ -19,6 +20,38 @@ const ServicesSection = () => {
   const handleHover = (index) => {
     setHoveredService(index);
   };
+
+  useEffect(() => {
+    Events.scrollEvent.register('begin', () => {});
+    Events.scrollEvent.register('end', () => {});
+
+    scrollSpy.update();
+
+    return () => {
+      Events.scrollEvent.remove('begin');
+      Events.scrollEvent.remove('end');
+    };
+  }, []);
+
+  useEffect(() => {
+    const sectionHeight = window.innerHeight;
+    console.log(sectionHeight);
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+
+      if (scrollPosition <= sectionHeight) {
+        setHoveredService(0);
+      } else {
+        setHoveredService(1);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const getHoveredClass1 = () =>
     hoveredService !== null ? `service${hoveredService}` : 'service0';
