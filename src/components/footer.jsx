@@ -2,7 +2,7 @@ import { AiFillGoogleCircle, AiFillFacebook } from 'react-icons/ai';
 
 const Footer = () => {
   return (
-    <footer className='footer bg-stone-900 text-white flex flex-col md:flex-row py-10 text-center items-center justify-around'>
+    <footer className='footer bg-[#BB951C] text-[#01443B] flex flex-col md:flex-row py-10 text-center items-center justify-around'>
       <div className='text px-4 mb-4 md:mb-0 md:w-1/3'>
         <h1 className='text-2xl font-bold'>Sure Boi Photography</h1>
       </div>
@@ -30,6 +30,6 @@ const Footer = () => {
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;

@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import img1 from '../assets/img1.jpg';
-import img7 from '../assets/img7.jpg';
 
 const ServiceItem = ({ title, index, handleHover }) => (
   <div className='w-full sm:w-1/2 md:w-1/3 p-4 mb-20 relative'>
@@ -8,7 +6,7 @@ const ServiceItem = ({ title, index, handleHover }) => (
       className='h-full flex flex-col justify-center'
       onMouseEnter={() => handleHover(index)}
     >
-      <h3 className='absolute top-96 sm:top-24 text-[25px] text-shadow font-semibold mb-2 text-white'>
+      <h3 className='absolute top-96 sm:top-48 md:top-24 text-[25px] font-semibold mb-2'>
         {title}
       </h3>
     </div>
@@ -33,15 +31,15 @@ const ServicesSection = () => {
   ];
 
   return (
-    <div className='relative'>
+    <div className='relative text-[#01443B]'>
       <div className={`bgimg ${getHoveredClass1()}`}></div>
       <section
         id='services'
-        className={`py-16 h-screen absolute top-0 left-0 right-0 bottom-0 ${getHoveredClass2()}`}
+        className={`py-16 h-screen absolute top-0 left-0 right-0 bottom-0 ${getHoveredClass2()} transition-all duration-700 ease-in-out`}
         style={{ zIndex: 1 }}
       >
         <div className='container mx-auto text-center'>
-          <h2 className='text-3xl text-white font-bold mb-8'>
+          <h2 className='text-3xl font-bold mb-8 text-center sm:text-left ml-0 sm:ml-4'>
             What Do You Need
           </h2>
           <div className='flex flex-col justify-center'>
