@@ -39,7 +39,7 @@ const ServicesSection = () => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
 
-      if (scrollPosition <= sectionHeight) {
+      if (scrollPosition < (sectionHeight*1.5)) {
         setHoveredService(0);
       } else {
         setHoveredService(1);
