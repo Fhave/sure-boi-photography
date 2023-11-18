@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 const ServiceItem = ({ title, index, handleHover }) => (
-  <div className='w-full sm:w-1/2 md:w-1/3 p-4 mb-20 relative'>
+  <div className='w-full sm:w-1/2 md:w-1/3 p-4 mb-20 relative cursor-pointer'>
     <div
       className='h-full flex flex-col justify-center'
       onMouseEnter={() => handleHover(index)}
@@ -35,7 +35,7 @@ const ServicesSection = () => {
       <div className={`bgimg ${getHoveredClass1()}`}></div>
       <section
         id='services'
-        className={`py-16 h-screen absolute top-0 left-0 right-0 bottom-0 ${getHoveredClass2()} transition-all duration-700 ease-in-out`}
+        className={`py-16 h-screen absolute top-0 left-0 right-0 bottom-0 ${getHoveredClass2()} transition-all duration-500 ease-in-out`}
         style={{ zIndex: 1 }}
       >
         <div className='container mx-auto text-center'>

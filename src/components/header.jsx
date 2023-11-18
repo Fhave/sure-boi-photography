@@ -60,8 +60,8 @@ const Header = () => {
 
   return (
     <header
-      className={`nav p-4 absolute top-0 left-0 w-full ${
-        showBackground ? 'bg-yellow-500' : 'bg-transparent'
+      className={`nav px-4 absolute top-0 left-0 w-full ${
+        showBackground ? 'bg-[#BB951C]' : 'bg-transparent'
       } transition-all duration-500`}
     >
       <div className='container mx-auto flex items-center justify-between'>
