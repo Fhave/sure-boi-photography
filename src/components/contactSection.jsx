@@ -13,14 +13,14 @@ const ContactSection = () => {
     try {
       await axios.post('https://email-server-ochre.vercel.app/send-email', {
         user: {
-          from: 'omosiyobo@gmail.com',
+          from: 'sureboiphotography@gmail.com',
           to: email,
           subject: 'Contact Form',
           text: 'We have received your message',
         },
         owner: {
-          from: 'omosiyobo@gmail.com',
-          to: 'omosiyobo@gmail.com', // Replace with the actual owner's email
+          from: 'sureboiphotography@gmail.com',
+          to: 'sureboiphotography@gmail.com', // Replace with the actual owner's email
           subject: 'New Form Submission',
           text: `You received a new form submission:\n\n${message}`,
         },
